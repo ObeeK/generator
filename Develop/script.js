@@ -25,7 +25,7 @@ var generatePassword = function() {
 
 
 // validate length is a # & within range
-  if((Number.isNaN(length)) || (length < 8 || length > 128)) {
+  if(Number.isNaN(length)) && if(length >= 8 && length <= 128) {
     alert("Please enter a valid number");
     return "";
   }
@@ -49,6 +49,7 @@ var generatePassword = function() {
   if (hasSymbols) {
     characters += symbols
   }
+  console.log(characters);
 // loop through the large string and randomly select from all characters
 var passwordGen = "";
 
