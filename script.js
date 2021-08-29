@@ -30,7 +30,6 @@ var generatePassword = function() {
     return "";
   }
 // try later - use math floor/ceil to force whole number
-// also check between 8-128
 
 
 // generate password
